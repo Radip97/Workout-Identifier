@@ -1,0 +1,36 @@
+# =============================================================================
+#  Real-Time Exercise Classification System — Requirements
+# =============================================================================
+#
+#  Install with:
+#    pip install -r requirements.txt
+#
+#  If you have the local MediaPipe wheel, install it BEFORE the others:
+#    pip install mediapipe-0.9.3.0-cp38-cp38-win_amd64.whl
+#    pip install -r requirements.txt
+#
+#  Python version: 3.8  (required by the local mediapipe wheel)
+# =============================================================================
+
+# --- Core ML ---
+tensorflow==2.12.0          # GPU-optional; install tensorflow-gpu separately if needed
+keras==2.12.0               # bundled with TF 2.12, explicit pin for clarity
+
+# --- Pose estimation ---
+# mediapipe==0.9.3.0        # install from local .whl instead (see above)
+
+# --- Computer vision ---
+opencv-python==4.7.0.72     # webcam + video I/O
+
+# --- Data / numerics ---
+numpy>=1.23,<1.24           # TF 2.12 compatible range
+scipy>=1.9.0                # used for sequence interpolation in inference.py
+
+# --- Machine learning utilities ---
+scikit-learn>=1.2.0         # StandardScaler, train_test_split, confusion_matrix
+
+# --- Plotting ---
+matplotlib>=3.6.0           # training curves, confusion matrix
+
+# --- Misc ---
+tqdm>=4.64.0                # optional progress bars

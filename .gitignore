@@ -1,0 +1,27 @@
+# Virtual Environment
+myvenv/
+venv/
+env/
+.env
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large Datasets and Models
+workout/
+processed_data/
+saved_models/
+*.whl
+
+# Experiment Results
+*.json
+results.json
+all_results.json
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
