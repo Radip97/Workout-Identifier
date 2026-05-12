@@ -10,7 +10,6 @@ __pycache__/
 *$py.class
 
 # Large Datasets and Models
-workout/
 processed_data/
 saved_models/
 *.whl
